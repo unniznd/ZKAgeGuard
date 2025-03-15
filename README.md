@@ -12,13 +12,17 @@ https://github.com/unniznd/ZKAgeGuard.git
 ```
 
 2. Generate the circuit keys according to this [README](https://github.com/unniznd/ZKAgeGuard/blob/main/validate_age_circuit/README.md)
+3. Install the necessary packages in the frontend and backend
+```
+npm install
+```
 
-3. Run the node js server
+4. Run the node js server
 ```
 npm start
 ```
 
-4. Run the frontend 
+5. Run the frontend 
 ```
 npm run dev
 ```

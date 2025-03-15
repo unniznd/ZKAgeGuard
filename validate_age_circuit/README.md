@@ -1,9 +1,16 @@
 # Age Validation Circuit
 ## How setup and generate keys 
+Install the package
+```
+npm install
+```
+
 Compile the Circuit:
 ```
 circom age_validation.circom --r1cs --wasm --sym -o build
 ```
+
+
 
 Perform Trusted Setup:
 
