@@ -33,13 +33,14 @@ export default function Home() {
   }).build();
 
   return (
-    <div className="flex flex-col items-center justify-center max-w-md mx-auto p-8 bg-white rounded-lg shadow-lg">
+    <div className="flex flex-col items-center justify-center max-w-md mx-auto p-8 bg-white rounded-lg shadow-lg mt-6">
       <div className="mb-6 text-center">
         <h1 className="text-2xl font-bold text-gray-800 mb-2">
-          Verify Your Identity
+          Verify Your Age
         </h1>
         <p className="text-gray-600">
-          Scan this QR code with the Self app to securely verify your identity
+          Scan this QR code with the Self app to securely verify your age
+          criteria.
         </p>
       </div>
 
