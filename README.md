@@ -1,6 +1,7 @@
 # ZKAgeGuard
 We built a wrapper around the Self.xyz protocol that enables selective disclosure of identity attributes. Our wrapper extends the existing capabilities by allowing users to generate identity proofs and verify whether their age falls within a specified range—something not natively supported in the current package. Additionally, we provide this functionality as a reusable component, making integration seamless for developers.
 
+
 ## Why ZKAgeGuard
 
 In a digital world where privacy is critical, users should be able to prove essential details without oversharing personal data. Our solution empowers developers to integrate privacy-preserving identity verification into their applications, ensuring compliance with age-restricted services while maintaining user anonymity. This enhances security, reduces data exposure risks, and promotes a trust-based digital ecosystem.
