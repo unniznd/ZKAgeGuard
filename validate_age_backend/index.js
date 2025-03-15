@@ -1,11 +1,10 @@
 const express = require("express");
 const AgeValidator = require("./generate-helpers");
-const {
-  getUserIdentifier,
-  SelfBackendVerifier,
-} = require("@selfxyz/core");
+const { getUserIdentifier, SelfBackendVerifier } = require("@selfxyz/core");
 const snarkjs = require("snarkjs");
+require("dotenv").config();
 const { verifyAge } = require("./verify-helpers");
+
 const app = express();
 const port = 3001;
 app.use(express.json());
@@ -82,11 +81,6 @@ app.post("/api/validate-user", async (req, res) => {
       parsedData[2], // C
     ];
 
-    // const calldata = calldataBlob.split(",");
-    // //concatenate the first three elements of the array calldata
-    // const proofData = calldata.slice(0, 3).join(",");
-    // console.log("proofData", proofData);
-    // console.log(calldata[3]);
     const isAgeValid = await verifyAge(groth16Proof, parsedData[3]);
     console.log("isAgeValid", isAgeValid);
     return res.json({

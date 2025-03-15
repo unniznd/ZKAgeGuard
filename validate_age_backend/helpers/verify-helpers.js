@@ -2,9 +2,7 @@ import { ethers } from "ethers";
 import { AgeRestrictedABI, contractAddress } from "../constants/contract";
 
 // Connect to Sepolia testnet
-const provider = new ethers.providers.JsonRpcProvider(
-  "https://rpc-sepolia.rockx.com"
-);
+const provider = new ethers.providers.JsonRpcProvider(process.env.JSON_RPC_URL);
 
 // Connect to contract without a signer (for read-only calls)
 const contract = new ethers.Contract(
