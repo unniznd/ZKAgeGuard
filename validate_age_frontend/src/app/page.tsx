@@ -16,8 +16,8 @@ export default function Home() {
 
   // Create the SelfApp configuration
   const selfApp = new SelfAppBuilder({
-    appName: "Hashir Application",
-    scope: "hashir-scope",
+    appName: "Age Verifier Application",
+    scope: "age-verifier-app-scope",
     endpoint: `${process.env.NEXT_PUBLIC_BACKEND_API_URL}/api/validate-user`,
 
     userId,

@@ -40,7 +40,7 @@ app.post("/api/validate-user", async (req, res) => {
     // Initialize verifier
     const selfBackendVerifier = new SelfBackendVerifier(
       "https://forno.celo.org",
-      "hashir-scope",
+      "age-verifier-app-scope",
       "uuid",
       true
     );
