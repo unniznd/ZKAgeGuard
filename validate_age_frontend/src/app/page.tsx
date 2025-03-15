@@ -4,7 +4,6 @@ import { v4 as uuidv4 } from "uuid";
 import { useEffect, useState } from "react";
 import path from "path";
 
-
 export default function Home() {
   const [userId, setUserId] = useState<string | null>(null);
 
@@ -33,7 +32,6 @@ export default function Home() {
     },
   }).build();
 
-
   return (
     <div className="flex flex-col items-center justify-center max-w-md mx-auto p-8 bg-white rounded-lg shadow-lg">
       <div className="mb-6 text-center">
@@ -55,16 +53,6 @@ export default function Home() {
           size={280}
         />
       </div>
-
-      <div className="w-full flex items-center justify-center mb-6">
-        <div className="h-px bg-gray-200 w-full"></div>
-        <span className="px-4 text-sm text-gray-400">OR</span>
-        <div className="h-px bg-gray-200 w-full"></div>
-      </div>
-
-      <button className="w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition-colors mb-6">
-        Open in Self App
-      </button>
 
       <div className="text-center">
         <p className="text-sm text-gray-500">

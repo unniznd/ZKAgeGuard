@@ -1,9 +1,9 @@
 const express = require("express");
-const AgeValidator = require("./generate-helpers");
 const { getUserIdentifier, SelfBackendVerifier } = require("@selfxyz/core");
 const snarkjs = require("snarkjs");
 require("dotenv").config();
-const { verifyAge } = require("./verify-helpers");
+const { verifyAge } = require("./helpers/verify-helpers");
+const AgeValidator = require("./helpers/generate-helpers");
 
 const app = express();
 const port = 3001;

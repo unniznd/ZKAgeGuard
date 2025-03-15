@@ -4,8 +4,11 @@ const path = require("path");
 
 class AgeValidator {
   constructor() {
-    this.wasmPath = path.join(__dirname, "circuit-keys/age_validation.wasm");
-    this.zkeyPath = path.join(__dirname, "circuit/age_validation_0001.zkey");
+    this.wasmPath = path.join(__dirname, "../circuit-keys/age_validation.wasm");
+    this.zkeyPath = path.join(
+      __dirname,
+      "../circuit-keys/age_validation_0001.zkey"
+    );
   }
 
   // Generate a proof for a given age and thresholds
