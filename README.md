@@ -39,6 +39,7 @@ See our demo [here](https://youtu.be/c8D7xv5NQyw)
  - NodeJS
  - Solidity
  - Circom
+ - Self.xyz
 
  
 ## Made with ❤️ by:
